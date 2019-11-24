@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     Longshot \
     NexusLauncherRelease \
     NexusWallpapersStubPrebuilt2019Static \
+    OPScreenRecorder \
     PixelThemesStub2019 \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
