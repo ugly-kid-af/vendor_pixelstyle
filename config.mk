@@ -93,5 +93,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Inherit from audio config
+$(call inherit-product, vendor/pixelstyle/config/audio.mk)
+
 # Inherit from fonts config
 $(call inherit-product, vendor/pixelstyle/config/fonts.mk)
