@@ -34,6 +34,10 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
 
+# Initialize some permissions
+PRODUCT_COPY_FILES += \
+    vendor/pixelstyle/etc/permissions/privapp-permissions-pixelplusui.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-pixelplusui.xml
+
 # Hidden api whitelisted apps
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/sysconfig/pixelplusui-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixelplusui-hiddenapi-package-whitelist.xml
