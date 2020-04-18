@@ -16,7 +16,6 @@ LOCAL_PATH := vendor/pixelstyle
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    Longshot \
     NexusLauncherRelease \
     NexusWallpapersStubPrebuilt2019Static \
     OPScreenRecorder \
@@ -34,10 +33,6 @@ endif
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
-
-# Hidden api whitelisted apps
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/etc/sysconfig/pixelplusui-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixelplusui-hiddenapi-package-whitelist.xml
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
